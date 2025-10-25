@@ -14,5 +14,8 @@ class TipoAmbiente extends Model
         'status',
     ];
 
-    
+    public function ambientes()
+    {
+        return $this->hasMany(Ambiente::class);
+    }
 }
